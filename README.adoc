@@ -1,0 +1,23 @@
+﻿= OAB to CSV
+This is a small Python notebook for converting the mythical OAB format used by Outlook into a CSV with all contacts included.
+
+This should help you open an OAB file and extract the information that you want, but is in no way an exhaustive nor professional solution.
+
+Note that the conversion is a bit scuffed, leaving some fields raw, and some as bits.
+
+== Howto
+Install python, jupyter and tqdm. Usually installed by default in Google Collab.
+
+Drop your `udetails.oab` file in the root of the notebook and run.
+
+You should get your converted OAB file as `converted.csv`
+
+OAB Parser code from:
+https://github.com/byteDJINN/BOA
+
+== Explanation
+The OAB format is a proprietary way that Outlook uses to store an offline, less featured copy of the Global Address List.
+
+If you want to backup your contacts from you Exchange Outlook account, you're probably better looking into how to export the GAL directly.
+
+If you're doing forensic analysis, AD enumeration or just recovering contacts from old backups, this thing can help you.
